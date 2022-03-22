@@ -12,7 +12,7 @@ const locationWeather = (latitude, longitude, callback) => {
       const { current } = body;
       callback(
         undefined,
-        `${current.weather_descriptions[0]} (${current.weather_icons}) weather. It is currently ${current.temperature} degree out. It feels like ${current.feelslike} degree.`
+        `${current.weather_descriptions[0]} weather. It is currently ${current.temperature} degree out. It feels like ${current.feelslike} degree.`
       );
     }
   });
